@@ -7,9 +7,9 @@
 
 #endif //STRING_MATCH_PRINT_H
 
-void print(const vector<char> & fifo){
+void print(char * fifo){
     cout << "start printing" << endl;
-    for(auto i : fifo){
-        cout << i << endl;
-    }
+    for (int i = 0; i < FIFO_SIZE; ++i)
+        cout << fifo[i] << endl;
+
 }
